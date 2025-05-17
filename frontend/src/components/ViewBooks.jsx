@@ -59,7 +59,7 @@ function ViewBooks() {
 
   const handleDelete = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/api/books/${bookToDelete}`, {
+      const res = await fetch(`https://book-directory-backend-d7qo.onrender.com/api/books/${bookToDelete}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${token}` },
       });

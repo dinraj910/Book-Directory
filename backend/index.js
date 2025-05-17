@@ -26,7 +26,8 @@ app.use('/api/books', bookRoutes);
 
 connectDB();
 
-app.listen(PORT,()=>{
-    console.log(`🚀 Server running on http://localhost:${PORT}`);
+app.listen(PORT, () => {
+    console.log(`🚀 Server running on port ${PORT}`);
     console.log('✅ MongoDB connected');
-})
+});
+
