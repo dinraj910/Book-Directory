@@ -32,7 +32,7 @@ function Register() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:5000/api/users/register", formData);
+      await axios.post("https://book-directory-backend-d7qo.onrender.com/api/users/register", formData);
       setMessage("🎉 Registration Successful!");
       setTimeout(() => navigate("/login"), 2000);
     } catch (error) {
