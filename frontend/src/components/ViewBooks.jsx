@@ -91,7 +91,7 @@ function ViewBooks() {
   const handleEditSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch(`http://localhost:5000/api/books/${editingBook._id}`, {
+      const res = await fetch(`https://book-directory-backend-d7qo.onrender.com/api/books/${editingBook._id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -128,7 +128,7 @@ function ViewBooks() {
                 <img
                   src={
                     book.imageUrl
-                      ? `http://localhost:5000${book.imageUrl}`
+                      ? `https://book-directory-backend-d7qo.onrender.com${book.imageUrl}`
                       : "/default-book.png"
                   }
                   alt={book.title}
