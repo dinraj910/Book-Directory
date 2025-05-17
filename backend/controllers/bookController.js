@@ -36,7 +36,7 @@ exports.getUserBooks = async (req, res) => {
     }
 };
   
-  // @desc Update a book
+// @desc Update a book
 exports.updateBook = async (req, res) => {
     try {
       const book = await Book.findByIdAndUpdate(req.params.id, req.body, { new: true });

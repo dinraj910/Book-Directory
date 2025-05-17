@@ -5,8 +5,8 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db");
-const userRoutes = require("./routes/userRoutes"); 
-const bookRoutes = require("./routes/bookRoutes"); 
+const userRoutes = require("./routes/userRoutes");
+const bookRoutes = require("./routes/bookRoutes");
 const path = require('path');
 
 dotenv.config();
